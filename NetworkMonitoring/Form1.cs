@@ -16,7 +16,7 @@ namespace NetworkMonitoring
         {
             InitializeComponent();
         }
-       public void Ismail()
+       public void IsmailAndIbrahim()
         {
             
         }
