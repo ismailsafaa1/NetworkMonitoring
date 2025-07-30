@@ -16,10 +16,7 @@ namespace NetworkMonitoring
         {
             InitializeComponent();
         }
-        public void LoadData()
-        {
-            string name = "jjj";
-        }
+       
         private void Form1_Load(object sender, EventArgs e)
         {
             picAP.BackColor = Color.Green;
