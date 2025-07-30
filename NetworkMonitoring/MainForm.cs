@@ -42,14 +42,42 @@ namespace NetworkMonitoring
             dataBaseRegister.ShowDialog();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+   
+
+        private void button5_Click_1(object sender, EventArgs e)
         {
-          
+            SpeedInternet speedInternet = new SpeedInternet();
+            speedInternet.ShowDialog();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void button6_Click_1(object sender, EventArgs e)
         {
-            
+            IPInterface IPInterface = new IPInterface();
+            IPInterface.ShowDialog();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            NetProgram netProgram = new NetProgram();
+            netProgram.Show();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            DataBaseRegister dataBaseRegister = new DataBaseRegister();
+            dataBaseRegister.ShowDialog();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            IPInterface IPInterface = new IPInterface();
+            IPInterface.ShowDialog();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            SpeedInternet speedInternet = new SpeedInternet();
+            speedInternet.ShowDialog();
         }
     }
 }

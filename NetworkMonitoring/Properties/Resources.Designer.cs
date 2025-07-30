@@ -63,9 +63,79 @@ namespace NetworkMonitoring.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Close {
+            get {
+                object obj = ResourceManager.GetObject("Close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap multiplication_sign_11607136 {
+            get {
+                object obj = ResourceManager.GetObject("multiplication-sign_11607136", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap photo_2024_07_29_10_09_38 {
             get {
                 object obj = ResourceManager.GetObject("photo_2024-07-29_10-09-38", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_2025_04_10_16_38_29 {
+            get {
+                object obj = ResourceManager.GetObject("photo_2025-04-10_16-38-29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_2025_04_10_16_49_33 {
+            get {
+                object obj = ResourceManager.GetObject("photo_2025-04-10_16-49-33", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap نظام_مراقبة_الشبكة_الذكي_للمكاتب_الصغيرة_20250414_212521_٠٠٠٠ {
+            get {
+                object obj = ResourceManager.GetObject("نظام_مراقبة_الشبكة_الذكي_للمكاتب_الصغيرة_20250414_212521_٠٠٠٠", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap نظام_مراقبة_الشبكة_الذكي_للمكاتب_الصغيرة_20250414_215149_٠٠٠٠ {
+            get {
+                object obj = ResourceManager.GetObject("نظام_مراقبة_الشبكة_الذكي_للمكاتب_الصغيرة_20250414_215149_٠٠٠٠", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap نظام_مراقبة_الشبكة_الذكي_للمكاتب_الصغيرة_20250416_225818_٠٠٠٠ {
+            get {
+                object obj = ResourceManager.GetObject("نظام_مراقبة_الشبكة_الذكي_للمكاتب_الصغيرة_20250416_225818_٠٠٠٠", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

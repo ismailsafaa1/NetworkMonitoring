@@ -34,6 +34,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.picSwi = new System.Windows.Forms.PictureBox();
             this.picFingerPoint = new System.Windows.Forms.PictureBox();
             this.picAP = new System.Windows.Forms.PictureBox();
@@ -42,6 +43,7 @@
             this.picDesktop = new System.Windows.Forms.PictureBox();
             this.picCamera = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.picSwi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFingerPoint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAP)).BeginInit();
@@ -66,13 +68,23 @@
             this.timer2.Interval = 5000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(1001, 287);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 19);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Desktop";
+            // 
             // picSwi
             // 
             this.picSwi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picSwi.Image = ((System.Drawing.Image)(resources.GetObject("picSwi.Image")));
-            this.picSwi.Location = new System.Drawing.Point(125, 24);
+            this.picSwi.Location = new System.Drawing.Point(69, 25);
             this.picSwi.Name = "picSwi";
-            this.picSwi.Size = new System.Drawing.Size(106, 30);
+            this.picSwi.Size = new System.Drawing.Size(176, 64);
             this.picSwi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSwi.TabIndex = 7;
             this.picSwi.TabStop = false;
@@ -92,9 +104,9 @@
             // 
             this.picAP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picAP.Image = ((System.Drawing.Image)(resources.GetObject("picAP.Image")));
-            this.picAP.Location = new System.Drawing.Point(1041, 488);
+            this.picAP.Location = new System.Drawing.Point(1030, 471);
             this.picAP.Name = "picAP";
-            this.picAP.Size = new System.Drawing.Size(82, 74);
+            this.picAP.Size = new System.Drawing.Size(93, 91);
             this.picAP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAP.TabIndex = 5;
             this.picAP.TabStop = false;
@@ -103,9 +115,9 @@
             // 
             this.picRouter.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picRouter.Image = ((System.Drawing.Image)(resources.GetObject("picRouter.Image")));
-            this.picRouter.Location = new System.Drawing.Point(1077, 407);
+            this.picRouter.Location = new System.Drawing.Point(543, 225);
             this.picRouter.Name = "picRouter";
-            this.picRouter.Size = new System.Drawing.Size(46, 63);
+            this.picRouter.Size = new System.Drawing.Size(82, 84);
             this.picRouter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picRouter.TabIndex = 4;
             this.picRouter.TabStop = false;
@@ -114,9 +126,9 @@
             // 
             this.picTelephone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picTelephone.Image = ((System.Drawing.Image)(resources.GetObject("picTelephone.Image")));
-            this.picTelephone.Location = new System.Drawing.Point(43, 415);
+            this.picTelephone.Location = new System.Drawing.Point(41, 443);
             this.picTelephone.Name = "picTelephone";
-            this.picTelephone.Size = new System.Drawing.Size(53, 48);
+            this.picTelephone.Size = new System.Drawing.Size(99, 89);
             this.picTelephone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picTelephone.TabIndex = 3;
             this.picTelephone.TabStop = false;
@@ -124,7 +136,7 @@
             // picDesktop
             // 
             this.picDesktop.BackColor = System.Drawing.Color.White;
-            this.picDesktop.Location = new System.Drawing.Point(88, 362);
+            this.picDesktop.Location = new System.Drawing.Point(984, 225);
             this.picDesktop.Name = "picDesktop";
             this.picDesktop.Size = new System.Drawing.Size(92, 59);
             this.picDesktop.TabIndex = 2;
@@ -144,18 +156,24 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::NetworkMonitoring.Properties.Resources.نظام_مراقبة_الشبكة_الذكي_للمكاتب_الصغيرة_20250414_215149_٠٠٠٠;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1135, 574);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            // 
+            // backgroundWorker2
+            // 
+            this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork_1);
             // 
             // NetProgram
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1135, 574);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.picSwi);
             this.Controls.Add(this.picFingerPoint);
             this.Controls.Add(this.picAP);
@@ -164,12 +182,13 @@
             this.Controls.Add(this.picDesktop);
             this.Controls.Add(this.picCamera);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "NetProgram";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Network Monitore";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.NetProgram_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.picSwi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFingerPoint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAP)).EndInit();
@@ -179,12 +198,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCamera)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picCamera;
         private System.Windows.Forms.PictureBox picDesktop;
         private System.Windows.Forms.PictureBox picTelephone;
@@ -196,6 +214,9 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }
 
